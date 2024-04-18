@@ -1,35 +1,56 @@
 @import './base.css';
 
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url('./fonts/OpenSans-Light.woff2') format('woff2'),
+    url('./fonts/OpenSans-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('./fonts/OpenSans-Regular.woff2') format('woff2'),
+    url('./fonts/OpenSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  src: url('./fonts/OpenSans-SemiBold.woff2') format('woff2'),
+    url('./fonts/OpenSans-SemiBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('./fonts/OpenSans-Bold.woff2') format('woff2'),
+    url('./fonts/OpenSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 2rem;
   font-weight: normal;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
-}
-
-@media (hover: hover) {
+/* @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
   }
-}
+} */
 
 @media (min-width: 1024px) {
   body {
     display: flex;
     place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    font-family: "OpenSans-Light";
+    color: var(--vt-c-text-light);
+    letter-spacing: 0.25px;
   }
 }

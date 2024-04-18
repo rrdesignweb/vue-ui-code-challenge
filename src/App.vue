@@ -13,7 +13,7 @@ import Footer from "./components/Footer/index.vue"
     <FeatureHeroComponent />
     <FeatureCardItems />
   </main>
-
+  <Footer />
 </template>
 
 

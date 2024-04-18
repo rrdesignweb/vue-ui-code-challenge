@@ -1,0 +1,57 @@
+<template>
+  <div class="Card">
+    <img :src="image" alt="Card Image" class="card-image" />
+    <div class="card-content">
+      <h3>{{ title }}</h3>
+      <p>{{ description }}</p>
+      <a href="#" class="read-more">READ MORE</a>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+import { defineProps } from 'vue';
+
+const props = defineProps<{
+  title: string;
+  description: string;
+  image: string;
+}>();
+</script>
+
+<style scoped lang="scss">
+.Card {
+  .card-image {
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 5px solid var(--color-accent);
+  }
+
+  .card-content {
+    h3,
+    p {
+      margin: 12px 0;
+    }
+
+    h3 {
+      color: #fff;
+      font-family: "OpenSans-Regular";
+    }
+
+    .read-more {
+      color: #fff;
+      text-decoration: underline;
+      text-transform: uppercase;
+      text-underline-offset: 10px;
+      text-decoration-color: var(--color-accent);
+      font-size: 16px;
+      font-family: "OpenSans-Regular";
+
+      &:hover,
+      &:focus {
+        color: var(--color-accent);
+      }
+    }
+  }
+}
+</style>

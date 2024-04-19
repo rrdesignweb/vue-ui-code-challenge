@@ -2,16 +2,16 @@
   {
     "title": "Laboris incididunt consequat excepteur amet ipsum in",
     "description": "Ipsum enim Lorem incididunt eiusmod ex. Eu duis id laboris qui nostrud sit Lorem fugiat minim ea consectetur est tempor. ",
-    "image": "/images/component-02/image-01.jpg"
+    "image": "/assets/images/component-02/Image-01.jpg?format=avif"
   },
   {
     "title": "Ex aliquip eiusmod sint nisi eu et qui in enim aliquip fugiat",
     "description": "Ipsum enim Lorem incididunt eiusmod ex. Eu duis id laboris qui nostrud sit Lorem fugiat minim ea consectetur est tempor.",
-    "image": "/images/component-02/image-02.jpg"
+    "image": "/assets/images/component-02/Image-02.jpg?format=avif"
   },
   {
     "title": "Esse ea Lorem eiusmod nulla",
     "description": "Ipsum enim Lorem incididunt eiusmod ex. Eu duis id laboris qui nostrud sit Lorem fugiat minim ea consectetur est tempor.",
-    "image": "/images/component-02/image-03.jpg"
+    "image": "/assets/images/component-02/Image-03.jpg?format=avif"
   }
 ]

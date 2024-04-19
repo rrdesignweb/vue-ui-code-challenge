@@ -57,7 +57,7 @@ defineExpose({ open, close });
     }
 
     .close-button {
-      background-color: var(--color-background-soft);
+      background: #fff;
       border-radius: 50%;
       position: absolute;
       top: -15px;
@@ -73,16 +73,16 @@ defineExpose({ open, close });
       .close-icon {
         width: 24px;
         height: 24px;
-        fill: var(--color-background-mute);
+        fill: var(--color-background-soft);
         transition: all 0.25s ease-in-out;
       }
 
       &:hover,
       &:focus {
-        background: var(--color-background-mute);
+        background: var(--color-background-soft);
 
         .close-icon {
-          fill: var(--color-background-soft);
+          fill: #fff;
         }
       }
     }

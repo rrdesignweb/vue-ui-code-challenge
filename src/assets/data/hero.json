@@ -1,21 +1,21 @@
 [
   {
     "type": "portrait",
-    "src": "/images/component-01/image-01.jpg",
+    "src": "/assets/images/component-01/Image-01.jpg?format=avif",
     "class": "portrait",
-    "modalSrc": "/images/component-01/image-01@2x.jpg"
+    "modalSrc": "/assets/images/component-01/Image-01@2x.jpg?format=avif"
   },
   {
     "type": "landscape",
-    "src": "/images/component-01/image-03.jpg",
+    "src": "/assets/images/component-01/Image-03.jpg?format=avif",
     "class": "landscape",
-    "modalSrc": "/images/component-01/image-03@2x.jpg"
+    "modalSrc": "/assets/images/component-01/Image-03@2x.jpg?format=avif"
   },
   {
     "type": "landscape",
-    "src": "/images/component-01/image-02.jpg",
+    "src": "/assets/images/component-01/Image-02.jpg?format=avif",
     "class": "landscape",
-    "modalSrc": "/images/component-01/image-02@2x.jpg"
+    "modalSrc": "/assets/images/component-01/Image-02@2x.jpg?format=avif"
   },
   {
     "type": "richText",

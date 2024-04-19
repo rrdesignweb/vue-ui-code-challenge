@@ -19,7 +19,7 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 (Note if using nvm use the following command)
 
 ```sh
-nvm use 20.0.0
+nvm use 20.3.0
 ```
 
 ```sh

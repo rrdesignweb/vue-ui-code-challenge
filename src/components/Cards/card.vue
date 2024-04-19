@@ -1,10 +1,13 @@
 <template>
   <div class="Card">
-    <img :src="image" alt="Card Image" class="card-image" />
+    <picture>
+      <source :srcset="image" type="image/avif">
+      <img :src="image" alt="Card Image" class="card-image" loading="lazy" />
+    </picture>
     <div class="card-content">
       <h3>{{ title }}</h3>
       <p>{{ description }}</p>
-      <a href="#" class="read-more">READ MORE</a>
+      <a href="#" class="read-more" @click="logEvent">READ MORE</a>
     </div>
   </div>
 </template>
@@ -15,8 +18,16 @@ import { defineProps } from 'vue';
 const props = defineProps<{
   title: string;
   description: string;
-  image: string;
+  image: string; // Fallback image format 
+  imageAvif?: string; // AVIF format image, not directly used but here for reference
 }>();
+
+const logEvent = (event: MouseEvent) => {
+  console.log('Read more clicked', event);
+  event.preventDefault(); // Prevents the default action of the anchor tag
+};
+
+
 </script>
 
 <style scoped lang="scss">
@@ -28,6 +39,7 @@ const props = defineProps<{
   }
 
   .card-content {
+
     h3,
     p {
       margin: 12px 0;

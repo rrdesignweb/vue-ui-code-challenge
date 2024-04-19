@@ -18,11 +18,11 @@ footer {
   align-items: center;
   margin-top: 100px;
   color: #fff;
-  background-color: var(--vt-c-black-mute);
-}
+  background-color: var(--color-background-mute);
 
-.bleed-bg {
-  box-shadow: 0 100vmax 0 100vmax var(--vt-c-black-mute);
-  clip-path: inset(0 -100vmax 0 -100vmax);
+  &.bleed-bg {
+    box-shadow: 0 100vmax 0 100vmax var(--color-background-mute);
+    clip-path: inset(0 -100vmax 0 -100vmax);
+  }
 }
 </style>

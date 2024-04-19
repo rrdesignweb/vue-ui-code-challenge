@@ -1,0 +1,28 @@
+[
+  {
+    "type": "portrait",
+    "src": "/images/component-01/image-01.jpg",
+    "class": "portrait",
+    "modalSrc": "/images/component-01/image-01@2x.jpg"
+  },
+  {
+    "type": "landscape",
+    "src": "/images/component-01/image-03.jpg",
+    "class": "landscape",
+    "modalSrc": "/images/component-01/image-03@2x.jpg"
+  },
+  {
+    "type": "landscape",
+    "src": "/images/component-01/image-02.jpg",
+    "class": "landscape",
+    "modalSrc": "/images/component-01/image-02@2x.jpg"
+  },
+  {
+    "type": "richText",
+    "class": "text-block",
+    "contentBlock": {
+      "title": "Answer your body's needs",
+      "htmlContent": "<p>Ullamco officia voluptate nulla veniam laborum dolor.Laborum qui elit anim aute cillum labore. Sunt do labore ex non deserunt reprehenderit voluptate nulla.Officia nisi et occaecat aute nostrud amet laboris adipisicing eu culpa.Voluptate pariatur est mollit adipisicing ex culpa ut ullamco esse sit culpa labore nostrud.Nostrud incididunt eu sint ea fugiat incididunt esse consequat id labore. Sunt deserunt quis labore ipsum dolore fugiat.</p><p class='accent'><strong>BE MINDFUL</strong></p><p><strong>Id Lorem nulla commodo ipsum qui laboris laboris est incididunt elit velit eiusmod elit enim. Sunt in fugiat exercitation et.</strong></p>"
+    }
+  }
+]

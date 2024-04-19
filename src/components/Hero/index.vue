@@ -1,6 +1,7 @@
 <template>
   <div class="FeatureContainer">
-    <div v-for="(item, index) in featureData" :key="index" class="grid-item" :class="item.class"
+    <!-- TODO: ":class="item.type" can be conditional - if type="xyz" then class="whatever" -->
+    <div v-for="(item, index) in featureData" :key="index" class="grid-item" :class="item.type"
       @click="item.src ? openModal(item.modalSrc || '') : null">
       <template v-if="item.src">
         <picture>
@@ -12,12 +13,12 @@
         <h2 class="title">
           {{ item.contentBlock.title }}
         </h2>
-        <div class="rich-text" v-html="item.contentBlock.htmlContent"></div>
+        <div class="richtext" v-html="item.contentBlock.htmlContent"></div>
       </template>
     </div>
     <Modal ref="modalRef">
       <picture>
-        <source :srcset="selectedImage" type="image/avif" >
+        <source :srcset="selectedImage" type="image/avif">
         <img :src="selectedImage" :alt="`Selected image`" loading="lazy">
       </picture>
     </Modal>
@@ -29,15 +30,16 @@ import { ref, type Ref } from 'vue';
 import Modal from "@/components/Modal/index.vue";
 import heroData from "@/assets/data/hero.json";
 
-const featureData: Ref<Array<FeatureItem>> = ref(heroData);
+const featureData: FeatureItem[] = heroData as FeatureItem[];
 
 const modalRef: Ref<{ open: () => void } | null> = ref(null);
 const selectedImage: Ref<string> = ref('');
 
+type TFeaturedItem = "landscape" | "portrait" | "richtext";
+
 interface FeatureItem {
-  type?: string;
+  type: TFeaturedItem;
   src?: string;
-  class?: string;
   modalSrc?: string;
   contentBlock?: {
     title: string;
@@ -86,7 +88,7 @@ function openModal(modalSrc: string) {
       }
     }
 
-    &.text-block {
+    &.richtext {
       grid-column: 3 / span 1;
       grid-row: 1 / span 2;
       overflow-y: scroll;
